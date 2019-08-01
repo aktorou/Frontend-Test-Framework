@@ -1,0 +1,19 @@
+<?php
+/** @var $this BaseLayout */
+
+use Packaged\Dispatch\Dispatch;
+use Packaged\Dispatch\ResourceStore;
+use ProtectedNet\FrontendTestFramework\Layouts\BaseLayout\BaseLayout;
+
+?>
+<!doctype>
+<head>
+  <title><?= $this->getSiteTitle() ?></title>
+  <meta charset="UTF-8">
+  <?= Dispatch::instance()->store()->generateHtmlIncludes(ResourceStore::TYPE_CSS); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<?= $this->getContent(); ?>
+<?= Dispatch::instance()->store()->generateHtmlIncludes(ResourceStore::TYPE_JS); ?>
+</body>

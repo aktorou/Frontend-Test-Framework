@@ -1,0 +1,18 @@
+<?php
+/** @var $this DefaultLayout */
+
+use ProtectedNet\FrontendTestFramework\Layouts\DefaultLayout\DefaultLayout;
+
+?>
+
+<header>
+  <?= $this->_getNav(); ?>
+  <?= $this->_getHero(); ?>
+</header>
+
+<?= $this->getContent(); ?>
+
+<footer>
+  <?= $this->_getFooter(); ?>
+</footer>
+

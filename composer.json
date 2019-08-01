@@ -1,0 +1,40 @@
+{
+  "name": "protected-net/frontend-test-framework",
+  "description": "Frontend Developer Test",
+  "license": "BSD-3-Clause",
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "minimum-stability" : "dev",
+    "sort-packages": true,
+    "platform": {
+      "php": "7.3.2"
+    }
+  },
+  "require": {
+    "cubex/framework": "^4.1",
+    "packaged/dispatch": "^2.6",
+    "packaged/helpers": "^2.2",
+    "packaged-ui/fontawesome": "^3.5.2",
+    "filp/whoops": "^2.3",
+    "protected-net/ui": "^0.1",
+    "packaged-ui/bem-component": "^1.0",
+    "php": "~7.3"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "ProtectedNet\\FrontendTestFramework\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:protectednet/ui.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:protectednet/fontawesome.git"
+    }
+  ]
+}
