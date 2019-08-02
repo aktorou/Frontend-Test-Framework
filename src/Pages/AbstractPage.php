@@ -6,12 +6,12 @@ use Packaged\Context\ContextAwareTrait;
 use Packaged\Dispatch\Component\DispatchableComponent;
 use Packaged\Dispatch\Component\UiComponentTrait;
 use Packaged\Ui\Html\TemplatedHtmlElement;
+use ProtectedNet\FrontendTestFramework\Components\AbstractComponent;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\FooterLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\HeroLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\NavLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\TavLayout;
 use ProtectedNet\FrontendTestFramework\Partials\AbstractPartial;
-use ProtectedNet\UiComponents\AbstractComponent;
 
 abstract class AbstractPage extends TemplatedHtmlElement implements DispatchableComponent, ContextAware
 {

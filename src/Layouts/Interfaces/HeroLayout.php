@@ -1,7 +1,7 @@
 <?php
 namespace ProtectedNet\FrontendTestFramework\Layouts\Interfaces;
 
-use ProtectedNet\UiComponents\AbstractComponent;
+use ProtectedNet\FrontendTestFramework\Components\AbstractComponent;
 
 interface HeroLayout
 {
