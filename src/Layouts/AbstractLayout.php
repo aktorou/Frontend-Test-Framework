@@ -10,7 +10,7 @@ abstract class AbstractLayout extends Element implements TavLayout
 {
   use ContextAwareTrait;
 
-  protected $_siteTitle = 'Total AV';
+  protected $_siteTitle = 'Frontend Test';
   protected $_content = [];
 
   /**
