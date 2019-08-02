@@ -62,9 +62,6 @@ abstract class AbstractFrontendTestSite extends Application
         }
       }
     );
-
-    //Resource Handler
-    Dispatcher::i(dirname(__DIR__));
   }
 
   protected function _initialize()
