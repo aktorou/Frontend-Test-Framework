@@ -14,17 +14,10 @@ use Packaged\Http\Response;
 use Packaged\Routing\Handler\FuncHandler;
 use Packaged\Routing\Handler\Handler;
 use Packaged\Routing\Route;
-use ProtectedNet\FrontendTestFramework\Controllers\DefaultController;
 use ProtectedNet\FrontendTestFramework\Dispatch\Dispatcher;
 
 abstract class AbstractFrontendTestSite extends Application
 {
-  /** @return Handler */
-  protected function _defaultHandler(): Handler
-  {
-    return new DefaultController();
-  }
-
   /**
    * @return callable|Generator|Handler|Route[]|string
    */
