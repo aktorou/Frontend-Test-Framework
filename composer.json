@@ -15,9 +15,7 @@
     "cubex/framework": "^4.1",
     "packaged/dispatch": "^2.6",
     "packaged/helpers": "^2.2",
-    "packaged-ui/fontawesome": "^3.5.2",
     "filp/whoops": "^2.3",
-    "protected-net/ui": "^0.1",
     "packaged-ui/bem-component": "^1.0",
     "php": "~7.3"
   },
@@ -27,14 +25,5 @@
       "ProtectedNet\\FrontendTestFramework\\": "src/"
     }
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:protectednet/ui.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:protectednet/fontawesome.git"
-    }
-  ]
+  "repositories": []
 }
