@@ -22,15 +22,6 @@ abstract class AbstractComponent extends TemplatedHtmlElement implements BemComp
     $this->_initDispatchableComponent($this);
   }
 
-  /** @return string */
-  protected function _getTemplatedPhtmlClass()
-  {
-    return $this->_getTemplateClass();
-  }
-
-  /** @return string */
-  abstract protected function _getTemplateClass(): string;
-
   /**
    * @param string $name
    *

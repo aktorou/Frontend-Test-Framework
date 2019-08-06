@@ -16,7 +16,7 @@
     "packaged/dispatch": "^2.6",
     "packaged/helpers": "^2.2",
     "filp/whoops": "^2.3",
-    "packaged-ui/bem-component": "^1.0",
+    "packaged-ui/bem-component": "^1.0.1",
     "php": "~7.3"
   },
   "require-dev": {},
