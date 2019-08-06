@@ -9,6 +9,7 @@ use Packaged\Ui\Renderable;
 use ProtectedNet\FrontendTestFramework\Layouts\BaseLayout\BaseLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\DefaultLayout\DefaultLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\TavLayout;
+use ProtectedNet\FrontendTestFramework\Pages\HydratablePage;
 
 abstract class AbstractController extends Controller
 {
@@ -68,6 +69,11 @@ abstract class AbstractController extends Controller
       if($theme instanceof ContextAware)
       {
         $theme->setContext($this->getContext());
+      }
+
+      if($result instanceof HydratablePage)
+      {
+        $result->hydrateLayout($theme);
       }
 
       $theme->setContent($result);

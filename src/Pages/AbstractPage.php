@@ -13,7 +13,7 @@ use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\NavLayout;
 use ProtectedNet\FrontendTestFramework\Layouts\Interfaces\TavLayout;
 use ProtectedNet\FrontendTestFramework\Partials\AbstractPartial;
 
-abstract class AbstractPage extends TemplatedHtmlElement implements DispatchableComponent, ContextAware
+abstract class AbstractPage extends TemplatedHtmlElement implements DispatchableComponent, ContextAware, HydratablePage
 {
   use UiComponentTrait;
   use ContextAwareTrait;
