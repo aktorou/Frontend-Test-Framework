@@ -28,13 +28,4 @@ abstract class AbstractPartial extends TemplatedHtmlElement implements Dispatcha
     return new static();
   }
 
-  /** @return string */
-  protected function _getTemplatedPhtmlClass()
-  {
-    return $this->_getTemplateClass();
-  }
-
-  /** @return string */
-  abstract protected function _getTemplateClass(): string;
-
 }
