@@ -10,5 +10,5 @@ interface FooterLayout
    *
    * @return mixed
    */
-  public function setFooter(AbstractPartial $footer);
+  public function setFooter($footer);
 }

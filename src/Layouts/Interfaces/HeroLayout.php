@@ -10,5 +10,5 @@ interface HeroLayout
    *
    * @return mixed
    */
-  public function setHero(AbstractComponent $hero);
+  public function setHero($hero);
 }

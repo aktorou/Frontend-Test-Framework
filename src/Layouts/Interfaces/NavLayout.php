@@ -10,5 +10,5 @@ interface NavLayout
    *
    * @return mixed
    */
-  public function setNav(AbstractPartial $nav);
+  public function setNav($nav);
 }
